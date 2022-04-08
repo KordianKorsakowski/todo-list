@@ -1,0 +1,51 @@
+.new-todo__controls {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+@media (max-width: 750px) {
+  .new-todo__controls {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+.new-todo__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.new-todo__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.new-todo__actions {
+  display: flex;
+  align-items: flex-end;
+}
+.btn-add {
+  background-color: #5c5c5c;
+  transition: all 0.3s;
+}
+.btn-add:hover,
+.btn-add:active {
+  background: #474747;
+}
+
+.new-todo__control.invalid input {
+  border-color: #780202;
+  background-color: rgba(132, 67, 67, 0.23);
+}
+.new-todo__control.invalid label {
+  color: #780202;
+}

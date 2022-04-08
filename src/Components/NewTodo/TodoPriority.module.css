@@ -1,0 +1,30 @@
+.todo-filter {
+  padding: 0 1rem;
+}
+
+.todo-filter__control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.todo-filter label {
+  color: #000;
+}
+
+.todo-filter select {
+  font: inherit;
+  padding: 0.5rem 3rem;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+@media (max-width: 750px) {
+  .todo-filter__control {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,16 @@
+.todoList {
+  padding: 1rem;
+  background-color: rgb(31, 31, 31);
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+}
+
+ul {
+  padding: 0;
+}
+.info {
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+}
